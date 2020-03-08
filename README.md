@@ -1,7 +1,12 @@
 # Agilent-33220a-Remote-Control
 Python Script que permite controlar el generador de señales AGILENT 33220a desde una computadora, utilizando el módulo pyvisa.
 
-## Instalación
+## Descarga
+```sh
+$ git clone https://github.com/Quik-e/Agilent-33220a-Remote-Control.git
+```
+
+## Instalación necesaria
 Se utilizó [Python 3](https://www.python.org/) con los módulos pyvisa, numpy y matplotlib. Para instalar los módulos se utilizó el administrador de paquetes [pip](https://pypi.org/project/pip/).
 ### En Windows
 ```sh
