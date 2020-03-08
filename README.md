@@ -47,3 +47,39 @@ instrument.output_af("nombre_guardado",1,1000,0.5)
 ```
 Selecciona la señal a ser transmitida por el generador de señales, con una amplitud de 1v, frecuencia de 1kHz y un offset de 0.5v. Si la señal no se encuentra en la memoria (no se encuentra coincidencia con nombre_guardado), se mostrará el catálogo con los nombre de las señales disponibles.
 
+```python
+instrument.af_attributes("nombre_funcion")
+```
+Muestra atributos de la función nombre_funcion.
+
+```python
+instrument.erase_af("nombre_funcion")
+```
+Elimina de la memoria la función que tenga el nombre nombre_funcion.
+
+```python
+instrument.catalog()
+```
+Muestra las funciones arbitrarias disponibles en la memoria del generador de señales.
+
+```python
+instrument.display_text("Hola mundo")
+```
+Muestra Hola mundo en la pantalla del generador de señales.
+
+```python
+instrument.display_text("Hola mundo",3)
+```
+Muestra Hola mundo en la pantalla del generador de señales por tres segundos y después lo borra.
+
+```python
+instrument.output_on()
+```
+Enciende el output del instrumento.
+
+```python
+instrument.output_off()
+```
+Apaga el output del instrumento.
+
+
