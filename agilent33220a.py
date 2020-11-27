@@ -4,7 +4,6 @@ import numpy as np
 import visa
 
 class instrument:
-    
     def __init__(self, visa_instrument_handle):
         self.instrument_handle = visa_instrument_handle
         self.memory=65536
