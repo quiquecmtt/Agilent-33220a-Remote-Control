@@ -4,17 +4,17 @@ import numpy as np
 import visa
 
 class instrument:
-    memory=65536
-    namelen=12
-    vmax=10.0 # High Z
-    freqmax=1000000.0 #[Hz] Arbs
-    connected=0
-    lentext=40
-    noerror="ERROR"
-    nospace="+0\n"
-
+    
     def __init__(self, visa_instrument_handle):
         self.instrument_handle = visa_instrument_handle
+        self.memory=65536
+        self.namelen=12
+        self.vmax=10.0 # High Z
+        self.freqmax=1000000.0 #[Hz] Arbs
+        self.connected=0
+        self.lentext=40
+        self.noerror="ERROR"
+        self.nospace="+0\n"
 
     def write(self, command_string): # Implements visa write command
         self.instrument_handle.write(command_string)
